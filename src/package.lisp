@@ -12,6 +12,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Constants
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -23,6 +25,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Utility functions
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -42,6 +46,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Modular arithmetic
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -59,6 +65,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Secret Sharing types
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -82,6 +90,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Shamir Secret Sharing
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -98,6 +108,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Verifiable Secret Sharing
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -124,6 +136,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Distributed Key Generation
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -151,6 +165,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Proactive Secret Sharing
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -162,6 +178,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; MPC Arithmetic
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -174,6 +192,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Beaver Triples
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -191,6 +211,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Packed Secret Sharing
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -202,6 +224,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Oblivious Transfer types
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -228,6 +252,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; 1-of-2 Oblivious Transfer
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -241,6 +267,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; 1-of-n Oblivious Transfer
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -254,6 +282,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Base OT (Chou-Orlandi)
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -267,6 +297,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; OT Extension (IKNP)
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -281,6 +313,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Random OT
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -293,6 +327,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Correlated OT
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -305,6 +341,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Batched OT
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -317,6 +355,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Garbled Circuit types
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -355,6 +395,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Garbled Circuit operations
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -373,6 +415,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; 2PC Protocol
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -385,6 +429,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Example circuits
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -402,6 +448,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; SPDZ types
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -423,6 +471,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; SPDZ operations
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -442,6 +492,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; SPDZ protocol execution
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
@@ -454,6 +506,8 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; High-level interface
   (:export
+   #:deep-copy-list
+   #:group-by-count
    #:identity-list
    #:flatten
    #:map-keys
