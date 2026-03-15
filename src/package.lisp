@@ -12,14 +12,22 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Constants
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:+secp256k1-order+
            #:+wire-label-bytes+)
 
   ;; Utility functions
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:get-random-bytes
            #:random-integer
@@ -34,7 +42,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Modular arithmetic
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:mpc-mod
            #:mpc-mod-add
@@ -47,7 +59,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Secret Sharing types
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:secret-share
            #:secret-share-index
@@ -66,7 +82,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Shamir Secret Sharing
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:split-secret
            #:reconstruct-secret
@@ -78,7 +98,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Verifiable Secret Sharing
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:vss-commitment
            #:vss-commitment-coefficients
@@ -100,7 +124,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Distributed Key Generation
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:dkg-party-state
            #:dkg-party-state-id
@@ -123,14 +151,22 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Proactive Secret Sharing
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:proactive-refresh
            #:proactive-update-share)
 
   ;; MPC Arithmetic
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:mpc-add-shares
            #:mpc-sub-shares
@@ -138,7 +174,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Beaver Triples
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:beaver-triple
            #:beaver-triple-a
@@ -151,14 +191,22 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Packed Secret Sharing
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:packed-split-secrets
            #:packed-reconstruct-secrets)
 
   ;; Oblivious Transfer types
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:ot-sender-state
            #:ot-sender-state-private-key
@@ -180,7 +228,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; 1-of-2 Oblivious Transfer
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:ot-sender-init
            #:ot-receiver-choose
@@ -189,7 +241,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; 1-of-n Oblivious Transfer
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:ot-n-sender-init
            #:ot-n-receiver-choose
@@ -198,7 +254,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Base OT (Chou-Orlandi)
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:base-ot-sender-setup
            #:base-ot-receiver-choose
@@ -207,7 +267,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; OT Extension (IKNP)
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:ot-extension-state
            #:ot-extension-init
@@ -217,7 +281,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Random OT
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:random-ot-sender-init
            #:random-ot-receiver-choose
@@ -225,7 +293,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Correlated OT
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:correlated-ot-sender-init
            #:correlated-ot-receiver-choose
@@ -233,7 +305,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Batched OT
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:batched-ot-sender-init
            #:batched-ot-receiver-choose
@@ -241,7 +317,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Garbled Circuit types
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:wire-label
            #:wire-label-value
@@ -275,7 +355,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Garbled Circuit operations
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:generate-wire-labels
            #:garble-and-gate
@@ -289,7 +373,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; 2PC Protocol
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:gc-2pc-garble
            #:gc-2pc-evaluate
@@ -297,7 +385,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; Example circuits
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:make-and-circuit
            #:make-or-circuit
@@ -310,7 +402,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; SPDZ types
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:spdz-share
            #:spdz-share-value
@@ -327,7 +423,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; SPDZ operations
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:generate-mac-key-shares
            #:spdz-share-secret
@@ -342,7 +442,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; SPDZ protocol execution
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:run-spdz-addition
            #:run-spdz-multiplication
@@ -350,7 +454,11 @@ Distributed Key Generation, Oblivious Transfer, Garbled Circuits, and SPDZ proto
 
   ;; High-level interface
   (:export
-   #:with-mpc-timing
+   #:identity-list
+   #:flatten
+   #:map-keys
+   #:now-timestamp
+#:with-mpc-timing
    #:mpc-batch-process
    #:mpc-health-check#:mpc-session
            #:mpc-session-parties
